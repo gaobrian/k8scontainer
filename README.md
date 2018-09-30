@@ -4,7 +4,7 @@
 ##	kube 1.5.3需要的镜像:
 ```
 REPOSITORY                                               TAG
-gcr.io/google_containers/kube-apiserver-amd64            v1.5.3
+gcr.io/google_containers/kube-apiserver-amd64            v1.12.0
 gcr.io/google_containers/kube-controller-manager-amd64   v1.5.3
 gcr.io/google_containers/kube-proxy-amd64                v1.5.3
 gcr.io/google_containers/kube-scheduler-amd64            v1.5.3
