@@ -25,15 +25,15 @@ gcr.io/google_containers/pause-amd64                     3.0
 ```
 images=(kube-proxy-amd64:v1.5.3 kube-scheduler-amd64:v1.5.3 kube-controller-manager-amd64:v1.5.3 kube-apiserver-amd64:v1.5.3 etcd-amd64:3.0.14-kubeadm kube-discovery-amd64:1.0 pause-amd64:3.0 kubedns-amd64:1.9 dnsmasq-metrics-amd64:1.0 kube-dnsmasq-amd64:1.4 exechealthz-amd64:1.2)
 for imageName in ${images[@]} ; do
-  docker pull ist0ne/$imageName
-  docker tag ist0ne/$imageName gcr.io/google_containers/$imageName
-  docker rmi ist0ne/$imageName
+  docker pull meduo/$imageName
+  docker tag meduo/$imageName gcr.io/google_containers/$imageName
+  docker rmi meduo/$imageName
 done
 
 images=(heapster:canary heapster_grafana:v3.1.1 heapster_influxdb:v0.7)
 for imageName in ${images[@]} ; do
-  docker pull ist0ne/$imageName
-  docker tag ist0ne/$imageName kubernetes/$imageName
+  docker pull meduo/$imageName
+  docker tag meduo/$imageName kubernetes/$imageName
 done
 ```
 
